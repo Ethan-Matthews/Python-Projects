@@ -2,7 +2,7 @@
 #for a new program!
 """
 Student Name:   Ethan Matthews
-Program Title:  Hipsteres Vinyl Records
+Program Title:  Hipsteres Vinyl Records 
 Description:    This program will output the cost of a delivery.
 """
 

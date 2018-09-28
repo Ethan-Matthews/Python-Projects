@@ -2,7 +2,7 @@
 The first few lines of code will be my user input values. Variables used will be: princialAmount, ratePercent,
 numberOfYears. The there will ccalculations for the interest rate and the weekly payment. Variables used will be:
 interstRate, weeklyPayment. The program will then out put the weelkyPayment to the user in a string. Will be rounded
-to two decimal places.
+to two decimal places. 
 """
 
 #Don't forget to rename this file after copying the template
