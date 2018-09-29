@@ -7,7 +7,7 @@ kilos, grams. The program will then output a banner followed by a string display
 """
 
 #Don't forget to rename this file after copying the template
-#for a new program!
+#for a new program! 
 """
 Student Name:    Ethan Matthews
 Program Title:   Imperial to Metric Conversion Program
@@ -17,7 +17,7 @@ Description:     This program will convert user given imperial units to metric u
 def main(): #<-- Don't change this line!
     #Write your code below. It must be indented!
 
-    print("Imperial to Metric Conversion.\n")                                #A banner message.
+    print("Imperial to Metric Conversion.\n")                               #A banner message.
     impTons = float(input("Enter the number of imperial tons: "))           #User input imperial tons.
     stones = float(input("Enter the number of stones: "))                   #User input stones.
     pounds = float(input("Enter the number of pounds: "))                   #User input pounds.
@@ -30,7 +30,7 @@ def main(): #<-- Don't change this line!
     kilos = int(totalKilos - (metricTons * 1000))                           #Kilos left over after metric tons have been subtracted.
     grams = (totalKilos - (int(totalKilos))) * 1000                         #Grams left over after rounded kilos have been subtracted. muliplied by 1000 to move decimal.
 
-    print("\nThe metric weight is {0} metric tons, {1} kilos, and {2:.1f} grams.".format(metricTons, kilos, grams))
+    print("\nThe metric weight is {0} metric tons, {1} kilos, and {2:.1f} grams.".format(metricTons, kilos, grams))     #Output to user.
 
 
     #Your code ends on the line above
