@@ -31,7 +31,7 @@ def main(): #<-- Don't change this line!
     weightLimit = 50        #weight limit 50lbs.
 
     print("Welcome to the Surcharge Application!\n")
-    weightLbs = float(input("Please enter the weight of your luggage in pounds: "))     #User input luggage weight.
+    weightLbs = float(input("Please enter the weight of your luggage in pounds: "))     #User input luggage.  weight.
 
     if weightLbs > weightLimit:     #conditional statment - greater than.
         print("\nYou will be charged ${0:.2f}. Your luggage is over the {1}lbs. weight limit.".format(surcharge, weightLimit))      #print if greater than, surcharge and weight limit.
