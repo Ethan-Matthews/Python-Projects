@@ -18,16 +18,17 @@ def main(): #<-- Don't change this line!
 
     hourlyRate = 10.00
     overtimeBracket = 40
+    overtimePayRate = 1.5
     
     print("Welcome to the Pay Calculator!\n")
     hoursWorked = float(input("Enter the number of hours worked: "))
+    
 
-    regPay = hoursWorked * hourlyRate                                                                       #Calc for regular pay.
-    overTime = ((hoursWorked - overtimeBracket) * (hourlyRate * 1.5)) + (overtimeBracket * hourlyRate)      #Clac for overtime.
-
-    if hoursWorked > overtimeBracket:                                                                       #Conditional statement for overtimeBracket.
+    if hoursWorked > overtimeBracket:
+        overTime = ((hoursWorked - overtimeBracket) * (hourlyRate * overtimePayRate)) + (overtimeBracket * hourlyRate)  #Clac for overtime.                                                                #Conditional statement for overtimeBracket.
         print("\nYour total pay with overtime is ${0:.2f}.".format(overTime))                               #Print IF pay has overtime.
     else:
+        regPay = hoursWorked * hourlyRate
         print("\nYou total pay is ${0:.2f}.".format(regPay))                                                #Print IF pay doesn't have overtime.
 
     print("\nThankyou for using the Pay Calculator!")
