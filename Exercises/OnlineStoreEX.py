@@ -18,7 +18,7 @@ def main(): #<-- Don't change this line!
     harmonizedTax = 1.15
     otherTax = 1.11
 
-    print("Welcome to the Online Store! \n")
+    print("Welcome to the Online Store! \n")  
     cost = float(input("Enter the cost of your perchase: "))
     country = input("Enter your country: ")
 
