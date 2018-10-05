@@ -12,7 +12,7 @@ def main(): #<-- Don't change this line!
 
     import random
 
-    randomNumber = random.randint(1, 4)
+    randomNumber = random.randint(1, 4) 
     houseName = ""
 
     lastName = input("Enter last Name: ")
