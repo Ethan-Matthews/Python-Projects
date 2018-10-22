@@ -11,7 +11,7 @@ Description:    Program to calculate monthly payment of auto insurance.
 2. Create individual functions for calculations based on gender.
 3. Gender calculations will hold age brackets aswell.
 4. Create output function inform user of monthly payment.
-5. Create male or female logical statement in main function.
+5. Create male or female logical statement in main function. 
 """
 
 def userGender():
