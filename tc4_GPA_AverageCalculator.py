@@ -57,7 +57,7 @@ def individualOutput(prog1700, netw1700, osys1200, webd1000, comm1700, dbas1007)
     print("The numeric value for OSYS1200 is: {0}".format(osys1200))
     print("The numeric value for WEBD1000 is: {0}".format(webd1000))
     print("The numeric value for COMM1700 is: {0}".format(comm1700))
-    print("The numeric value for DBAS1007 is: {0}".format(dbas1007))
+    print("The numeric value for DBAS1007 is: {0}".format(dbas1007)) 
 
 
 def output(gpaOutput):

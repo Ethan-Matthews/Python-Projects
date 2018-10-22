@@ -38,7 +38,7 @@ def main(): #<-- Don't change this line!
         gpa = gradeB + letterModPlus
     elif combineGrade == "b-":
         gpa = gradeB + letterModMinus
-    
+     
     if combineGrade == "c":
         gpa = gradeC
     elif combineGrade == "c+":

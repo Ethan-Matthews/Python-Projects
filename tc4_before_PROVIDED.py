@@ -15,7 +15,7 @@ def welcome():
 def GPA(course):
 
     numericGrade = 0.0
-    
+     
     #Gather user inputs
     letterGrade = input("Please enter a letter grade for {0}: ".format(course)).upper()
     modifier = input("Please enter a modifier (+, - or nothing) : ")
