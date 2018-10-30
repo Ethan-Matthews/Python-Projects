@@ -3,7 +3,7 @@ Title NewUser
 
 rem Author:    Ethan Matthews
 rem Date:      Oct, 27th, 2018
-rem Revised:   
+rem Revised:   Oct, 30th, 2018
 rem Run this file as an Administrator!
 
 rem Create new folder on C:\ named "Scripts"
@@ -28,7 +28,7 @@ cd /d E:\CompanyInc\Management
 mkdir "ABruce Files"
 echo ABruce folder created in E:\CompanyInc\Management.
 pause
-icacls "E:\CompanyInc\Management\ABruce Files" /grant S-1-5-21-2349814851-1339320263-2864709163-1005: (F), (OI), (CI)
+icacls "E:\CompanyInc\Management\ABruce Files" /grant ABruce: (F), (OI), (CI)
 echo Created ACE for ABruce to the ABruce Files folder with fullcontrol
 echo and re-established inheritance permissions.
 pause
