@@ -28,7 +28,7 @@ cd /d E:\CompanyInc\Management
 mkdir "ABruce Files"
 echo ABruce folder created in E:\CompanyInc\Management.
 pause
-icacls "E:\CompanyInc\Management\ABruce Files" /grant ABruce: (F), (OI), (CI)
+icacls "E:\CompanyInc\Management\ABruce Files" /grant ABruce:F
 echo Created ACE for ABruce to the ABruce Files folder with fullcontrol
 echo and re-established inheritance permissions.
 pause
