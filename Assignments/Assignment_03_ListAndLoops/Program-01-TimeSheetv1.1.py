@@ -6,7 +6,7 @@ Program Title:   Time Sheet
 Description:     Design and write a program that accepts the number of hours worked
                  on each of five work days from the user, then displays different
                  information calculated about those entries as output.
-"""
+""" 
 
 """
 1. Prompt user to input hours worked 5 times using a FOR loop.

@@ -6,7 +6,7 @@ Program Title:   Message Redaction
 Description:     Design and write a program that removes all desired letters from any user-entered sentence or phrase.
 """
 
-"""
+""" 
 1. Create while loop (Switch) that will exit the program when user enters 'quit'.
 2. Prompt user for phrase.
 3. Promt user for a list of letters.

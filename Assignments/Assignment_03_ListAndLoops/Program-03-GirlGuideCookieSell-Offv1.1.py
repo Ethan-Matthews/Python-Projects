@@ -9,7 +9,7 @@ Description:     The organizers of the annual Girl Guide cookie sale event want
                  The organizers want a program to print the guide list and their prizes.
 """
 
-"""
+""" 
 1. Prompt user for number of guides in competition.
 2. Append lists with user input data. Guide name and boxes of cookies sold.
 3. Add boxes of cookies sold by each guide with FOR loop. 
