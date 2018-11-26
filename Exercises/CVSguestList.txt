@@ -1,0 +1,7 @@
+kate, 20
+jerry, 45
+goeff, 40
+bob, 25
+george, 32
+robert, 15
+fred, 76

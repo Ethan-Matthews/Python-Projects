@@ -4,5 +4,7 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"pyqt-integration.qtdesigner.path": "C:\\Users\\EMatt\\AppData\\Local\\Programs\\Python\\Python37\\Lib\\site-packages\\pyqt5_tools\\designer.exe"
+	}
 }
