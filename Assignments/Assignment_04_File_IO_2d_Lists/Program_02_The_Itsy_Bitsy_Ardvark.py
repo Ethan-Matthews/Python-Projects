@@ -28,7 +28,7 @@ def inputLoops(choicesFileName, accessModeChoices):
                 print("{0}) {1}".format(letter[0], row[counter]))
                 counter += 1
             counter = 1
-            # Verifies user input. If input is incorrect, will re-prompt user with same message.
+            # Verifies user input. If input is incorrect, will re-prompt user with same message. 
             inputCheck = False
             while inputCheck == False:
                 userChoice = input("Enter a choice (a-e): ").lower()

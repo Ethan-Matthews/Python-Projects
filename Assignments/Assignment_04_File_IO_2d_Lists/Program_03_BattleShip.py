@@ -14,7 +14,7 @@ Description:    Design and develop a program that replicates the functionality o
  7. Append visible list with hidden list data (hits or misses). Probably need to do some string splitting and re-concatenation.
  8. Output updated visable list, repeat for every user turn.
  9. At the end will need to compare missile count or number of hits to end program appropriately.
-10. While loop will be necessary to meet program ending conditions.
+10. While loop will be necessary to meet program ending conditions. 
 """
 # This function contains all the nesseary code to complete one turn.
 # Input, input checks, co-ordinate splitting/translating and map output.

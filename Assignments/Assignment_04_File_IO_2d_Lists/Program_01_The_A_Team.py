@@ -38,7 +38,7 @@ def main(): #<-- Don't change this line!
     # Open file
     myFile = open(fileName, accessMode)
 
-    # Header for program output.
+    # Header for program output. 
     terminalLines()
     print("Original Text")
     terminalLines()
