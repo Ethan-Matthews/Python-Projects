@@ -18,7 +18,7 @@ Description:    Use PyQT and Visual Studio Code to create a graphical applicatio
  8. BACKUP ALL WORK ON ONEDRIVE/GITHUB!!!!!
  9. Upload phases to git hub and bright space as they're due.
 10. Pray to PC gods that your hard drive doesn't buy the Farm. (Sacrifice at the very least, one goat and three chickens per week.)   
-"""
+""" 
 
 import sys, csv
 
