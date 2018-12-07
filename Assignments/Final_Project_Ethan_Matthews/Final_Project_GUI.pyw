@@ -101,7 +101,7 @@ class MyForm(QMainWindow, Ui_Final_Project.Ui_MainWindow):
         popPerSqrKM = float(totalPopulation) / KMs
 
         self.labelSquareAreaDisplay.setText("{0:.2f}".format(popPerSqrKM))
-
+ 
     def ComoboBox_Mile_KM(self):
         self.comboBoxMilesToKM.addItem("Sq. Miles")
         self.comboBoxMilesToKM.addItem("Sq. KM")
