@@ -6,22 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>862</width>
-    <height>754</height>
+    <width>800</width>
+    <height>745</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true"/>
-  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLineEdit" name="lineEditPopulation">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>390</y>
+      <x>480</x>
+      <y>400</y>
       <width>261</width>
       <height>31</height>
      </rect>
@@ -31,81 +28,50 @@
 </string>
     </property>
    </widget>
-   <widget class="QListWidget" name="listWidgetCountry">
+   <widget class="QComboBox" name="comboBoxMilesToKM">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>50</y>
-      <width>341</width>
-      <height>621</height>
+      <x>480</x>
+      <y>516</y>
+      <width>69</width>
+      <height>20</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
    </widget>
-   <widget class="QLabel" name="labelPopulation">
+   <widget class="QLabel" name="labelCountryListTitle">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>389</y>
-      <width>81</width>
-      <height>31</height>
+      <x>20</x>
+      <y>30</y>
+      <width>331</width>
+      <height>21</height>
      </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string> Population:</string>
+     <string>Choose A Country From the List:</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButtonUpdatePopulation">
+   <widget class="QLabel" name="labelVarTotalAreaIn">
     <property name="geometry">
      <rect>
       <x>610</x>
-      <y>440</y>
-      <width>141</width>
+      <y>510</y>
+      <width>111</width>
       <height>31</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
     <property name="text">
-     <string>Update Population</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="labelTotalArea">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>500</y>
-      <width>80</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>Total Area in:</string>
+     <string/>
     </property>
    </widget>
    <widget class="QGroupBox" name="groupBoxPopulationDensity">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>550</y>
+      <x>400</x>
+      <y>560</y>
       <width>341</width>
       <height>71</height>
      </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
     </property>
     <property name="title">
      <string>Population Density</string>
@@ -120,7 +86,7 @@
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(255, 255, 255);</string>
+      <string notr="true">color: rgb(0, 0, 0);</string>
      </property>
      <property name="text">
       <string>Per Square Mile</string>
@@ -136,7 +102,7 @@
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: rgb(255, 255, 255);</string>
+      <string notr="true">color: rgb(0, 0, 0);</string>
      </property>
      <property name="text">
       <string>Per Sqaure KM</string>
@@ -156,77 +122,26 @@
      </property>
     </widget>
    </widget>
-   <widget class="QLabel" name="labelPercentPop">
+   <widget class="QLabel" name="labelFlagImage">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>645</y>
-      <width>161</width>
-      <height>21</height>
+      <x>450</x>
+      <y>120</y>
+      <width>241</width>
+      <height>201</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
     <property name="text">
-     <string>Percentage of World Population:</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="labelPercentPopDisplay">
     <property name="geometry">
      <rect>
-      <x>630</x>
-      <y>644</y>
-      <width>111</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="labelCountryListTitle">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>20</y>
-      <width>331</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string>Choose A Country From the List:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="labelVarCountryName">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>35</y>
-      <width>111</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 255, 255);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="labelVarTotalAreaIn">
-    <property name="geometry">
-     <rect>
       <x>620</x>
-      <y>500</y>
+      <y>654</y>
       <width>111</width>
-      <height>31</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -234,13 +149,26 @@
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonUpdatePopulation">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>450</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Update Population</string>
     </property>
    </widget>
    <widget class="QScrollBar" name="verticalScrollBarCountryLists">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>50</y>
+      <x>340</x>
+      <y>60</y>
       <width>21</width>
       <height>621</height>
      </rect>
@@ -249,27 +177,72 @@
      <enum>Qt::Vertical</enum>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBoxMilesToKM">
+   <widget class="QLabel" name="labelPopulation">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>506</y>
-      <width>69</width>
-      <height>20</height>
+      <x>400</x>
+      <y>399</y>
+      <width>81</width>
+      <height>31</height>
      </rect>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string> Population:</string>
+    </property>
    </widget>
-   <widget class="QLabel" name="labelcheckBoxToggleImage">
+   <widget class="QLabel" name="labelTotalArea">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>130</y>
-      <width>191</width>
-      <height>181</height>
+      <x>400</x>
+      <y>510</y>
+      <width>80</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string>Total Area in:</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidgetCountry">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>341</width>
+      <height>621</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelVarCountryName">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>45</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelPercentPop">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>655</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Percentage of World Population:</string>
     </property>
    </widget>
   </widget>
@@ -278,18 +251,19 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>862</width>
+     <width>800</width>
      <height>26</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuFile">
+   <widget class="QMenu" name="menuFiel">
     <property name="title">
      <string>File</string>
     </property>
     <addaction name="actionLoad_File"/>
     <addaction name="actionSave_File"/>
+    <addaction name="actionExit"/>
    </widget>
-   <addaction name="menuFile"/>
+   <addaction name="menuFiel"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionLoad_File">
@@ -302,9 +276,12 @@
     <string>Save File</string>
    </property>
   </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
  </widget>
- <resources>
-  <include location="../../newprefex.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

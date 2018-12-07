@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'c:\Users\EMatt\OneDrive - Nova Scotia Community College\w0420789-MatthewsE\Programming\Git Repository\w0420789-MatthewsE\GUI\Tech_Check_GUI_07\Tech_Check_07_GUIs.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label_Salary = QtWidgets.QLabel(self.centralwidget)
+        self.label_Salary.setGeometry(QtCore.QRect(140, 150, 151, 31))
+        self.label_Salary.setObjectName("label_Salary")
+        self.label_Dependants = QtWidgets.QLabel(self.centralwidget)
+        self.label_Dependants.setGeometry(QtCore.QRect(140, 200, 231, 31))
+        self.label_Dependants.setObjectName("label_Dependants")
+        self.pushButton_Calculate = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_Calculate.setGeometry(QtCore.QRect(300, 260, 121, 41))
+        self.pushButton_Calculate.setObjectName("pushButton_Calculate")
+        self.lineEditDependants = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEditDependants.setGeometry(QtCore.QRect(370, 203, 51, 22))
+        self.lineEditDependants.setObjectName("lineEditDependants")
+        self.lineEditSalary = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEditSalary.setGeometry(QtCore.QRect(370, 155, 113, 20))
+        self.lineEditSalary.setObjectName("lineEditSalary")
+        self.label_ProvicialTax = QtWidgets.QLabel(self.centralwidget)
+        self.label_ProvicialTax.setGeometry(QtCore.QRect(140, 340, 151, 21))
+        self.label_ProvicialTax.setObjectName("label_ProvicialTax")
+        self.label_FederalTax = QtWidgets.QLabel(self.centralwidget)
+        self.label_FederalTax.setGeometry(QtCore.QRect(140, 370, 151, 21))
+        self.label_FederalTax.setObjectName("label_FederalTax")
+        self.label_2Dependants = QtWidgets.QLabel(self.centralwidget)
+        self.label_2Dependants.setGeometry(QtCore.QRect(140, 400, 241, 21))
+        self.label_2Dependants.setObjectName("label_2Dependants")
+        self.label_TotalWithheld = QtWidgets.QLabel(self.centralwidget)
+        self.label_TotalWithheld.setGeometry(QtCore.QRect(140, 430, 241, 21))
+        self.label_TotalWithheld.setObjectName("label_TotalWithheld")
+        self.label_TakeHomePay = QtWidgets.QLabel(self.centralwidget)
+        self.label_TakeHomePay.setGeometry(QtCore.QRect(140, 460, 241, 21))
+        self.label_TakeHomePay.setObjectName("label_TakeHomePay")
+        self.label_TakeHomePayDisplay = QtWidgets.QLabel(self.centralwidget)
+        self.label_TakeHomePayDisplay.setGeometry(QtCore.QRect(400, 460, 111, 21))
+        self.label_TakeHomePayDisplay.setText("")
+        self.label_TakeHomePayDisplay.setObjectName("label_TakeHomePayDisplay")
+        self.label_TotalWithheldDisplay = QtWidgets.QLabel(self.centralwidget)
+        self.label_TotalWithheldDisplay.setGeometry(QtCore.QRect(400, 430, 111, 21))
+        self.label_TotalWithheldDisplay.setText("")
+        self.label_TotalWithheldDisplay.setObjectName("label_TotalWithheldDisplay")
+        self.label_FederalTaxDisplay = QtWidgets.QLabel(self.centralwidget)
+        self.label_FederalTaxDisplay.setGeometry(QtCore.QRect(400, 370, 111, 21))
+        self.label_FederalTaxDisplay.setText("")
+        self.label_FederalTaxDisplay.setObjectName("label_FederalTaxDisplay")
+        self.label_2DependantsDisplay = QtWidgets.QLabel(self.centralwidget)
+        self.label_2DependantsDisplay.setGeometry(QtCore.QRect(400, 400, 111, 21))
+        self.label_2DependantsDisplay.setText("")
+        self.label_2DependantsDisplay.setObjectName("label_2DependantsDisplay")
+        self.label_ProvicialTaxDisplay = QtWidgets.QLabel(self.centralwidget)
+        self.label_ProvicialTaxDisplay.setGeometry(QtCore.QRect(400, 340, 111, 21))
+        self.label_ProvicialTaxDisplay.setText("")
+        self.label_ProvicialTaxDisplay.setObjectName("label_ProvicialTaxDisplay")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label_Salary.setText(_translate("MainWindow", "What is your salary?"))
+        self.label_Dependants.setText(_translate("MainWindow", "How Many dependants do you have?"))
+        self.pushButton_Calculate.setText(_translate("MainWindow", "Calculate Tax"))
+        self.label_ProvicialTax.setText(_translate("MainWindow", "Provicial tax Withheld:"))
+        self.label_FederalTax.setText(_translate("MainWindow", "Federal Tax Withheld:"))
+        self.label_2Dependants.setText(_translate("MainWindow", "Dependant Deduction for 2 dependants:"))
+        self.label_TotalWithheld.setText(_translate("MainWindow", "Total Withheld:"))
+        self.label_TakeHomePay.setText(_translate("MainWindow", "Total Take-Home Pay:"))
+

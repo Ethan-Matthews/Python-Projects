@@ -27,11 +27,11 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
 from PyQt5.QtGui import QPixmap
 
 #ADD IMPORT STATEMENT FOR YOUR GENERATED UI.PY FILE HERE
-import Ui_Final_Project_GUI
+import Ui_Final_Project
 #      ^^^^^^^^^^^ Change this!
 
 #CHANGE THE SECOND PARAMETER (Ui_ChangeMe) TO MATCH YOUR GENERATED UI.PY FILE
-class MyForm(QMainWindow, Ui_Final_Project_GUI.Ui_MainWindow):
+class MyForm(QMainWindow, Ui_Final_Project.Ui_MainWindow):
 #                         ^^^^^^^^^^^   Change this!
 
     CountriesList = []
@@ -48,6 +48,7 @@ class MyForm(QMainWindow, Ui_Final_Project_GUI.Ui_MainWindow):
         self.actionLoad_File.triggered.connect(self.LoadCountryMenu_Triggered)
         self.actionSave_File.triggered.connect(self.SaveCountryMenu_Triggered)
         self.listWidgetCountry.currentRowChanged.connect(self.ListRow_Changed)
+        self.listWidgetCountry.currentRowChanged.connect(self.flagImage)
         self.listWidgetCountry.currentRowChanged.connect(self.radioButton_Miles)
         self.listWidgetCountry.currentRowChanged.connect(self.ComoboBox_Mile_KM)
         self.radioButtonSquareMile.clicked.connect(self.radioButton_Miles)
@@ -80,6 +81,7 @@ class MyForm(QMainWindow, Ui_Final_Project_GUI.Ui_MainWindow):
         self.labelPercentPopDisplay.setText(countryPercent)
         
     def radioButton_Miles(self, Index):
+        self.radioButtonSquareMile.setText("")
         self.radioButtonSquareMile.setChecked(True)
         totalPopulation = self.CountriesList[Index][1]
         totalAreaCountry = self.CountriesList[Index][2]
@@ -89,6 +91,7 @@ class MyForm(QMainWindow, Ui_Final_Project_GUI.Ui_MainWindow):
         self.labelSquareAreaDisplay.setText("{0:.2f}".format(popPerSqrMile))
 
     def radioButton_KM(self, Index):
+        self.radioButtonSquareKM.setText("")
         self.radioButtonSquareKM.setChecked(True)
         totalPopulation = self.CountriesList[Index][1]
         totalAreaCountry = self.CountriesList[Index][2]
@@ -111,6 +114,19 @@ class MyForm(QMainWindow, Ui_Final_Project_GUI.Ui_MainWindow):
 
     def CheckedBox_Changed(self, state):
         pass
+
+    def flagImage(self, Index):
+        flagName = self.CountriesList[Index][0]
+        space = " "
+        underscore = "_"
+        if flagName.__contains__(space):
+            flagName = flagName.replace(space, underscore)
+            countryflag = QPixmap("Flags\{0}.png".format(flagName))
+            self.labelImage.setQPixmap(countryflag)
+        else:
+            countryflag = QPixmap("Flags\{0}.png".format(flagName))
+            self.labelImage.setQPixmap(countryflag)
+
 
 #Example Slot Function
 #   def SaveButton_Clicked(self):
