@@ -8,7 +8,7 @@ Description:    Use PyQT and Visual Studio Code to create a graphical applicatio
 """
  1. Create muliple objects in pyqt5. List Widget x1, list labels x8, push buton x1,
     scroll bar x1, menu actions x2, line edit x1, radio buttons x2, combo box x1, group box x1 
-    and one label for flag display.
+    and one label for flag display. 
  2. Add slots for all objects that have actions when program runs.
     Some lables are static and won't need any slots.
  3. Connect slots with appropriate functions.  Any Object that has an action when the program is
